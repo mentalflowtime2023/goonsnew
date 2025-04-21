@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* 工具區------------------------------------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    font-family: Arial, Helvetica, "微軟正黑體", sans-serif;
+}
+
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-index {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* 工具區------------------------------------------------------ */
+
+.index-interhead {
+    margin-top: 2rem;
+}
+
+.index-interhead-up {
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.index-big-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 2rem;
+}
+
+.index-middle-title {
+    text-align: center;
+    font-size: 32px;
+    margin: 1.5rem;
+}
+
+.index-list-title {
+    text-align: center;
+    font-size: 16px;
+    margin: 1.5rem;
+}
+
+
+.loginlink-css {
+    width: 100px;
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-btns-loginlink {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    background: #233C61;
+    font-weight: normal;
+    display: inline-flex;
+    justify-content: space-around
+}
+
+
+.loginlink {
+    margin: 9px;
+    color: #fff;
+    left: 40px;
+    text-decoration: none;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/* ---------圖片合併解------------------- */
+
+.toto {
+    width: 700px;
+    height: auto;
+    margin-top: 78px;
+    margin-bottom: 60PX;
+    margin-left: 272px;
+    margin-right: 304px;
+}
+
+/* ---------------------------- */
+
+.font-middle-title {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.photo {
+    max-height: 70%;
+    max-width: 70%;
+    margin: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    padding-top: 40px;
+}
+
+
+.index-interbody-word {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 40px;
+    color: #3776ca;
+}
+
+/* ---------------------------------- */
+
+.frame-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-appstore, .photo-google, .photo-microsoft {
+    margin: 8px;
+}
+
+.font-list-title-acss {
+    text-align: center;
+    color: #3776ca;
+    text-decoration: none;
+    border-bottom: 2px#3776ca solid;
+    padding-bottom: 5px;
+}
+
+/* RWD --------------------------------- */
+
+@media screen and (max-width: 480px) {
+    .toto, .photo {
+        justify-content: center;
+        margin-top: 78px;
+        margin-bottom: 60PX;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 80vw;
+    }
+
+    .photo {
+        max-height: 70%;
+        max-width: 70%;
+        width: 800px;
+        padding-top: 0%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .photo-appstore, .photo-google, .photo-microsoft {
+        margin: 8px;
+        /* flex-direction:column; */
+
+    }
+
+    .frame-photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .index-big-title, .index-middle-title, .index-middle-title {
+        font-size: 5vw;
+    }
+
+}
